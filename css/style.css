@@ -4,10 +4,6 @@ body {
   background-color: #ffffff;
 }
 
-header {
-  display: flex;
-}
-
 a {
   text-decoration: none;
 }
@@ -49,6 +45,10 @@ ol {
   color: #2e2f42;
 }
 
+.menu-link {
+  color: #2e2f42;
+}
+
 .menu a:hover,
 .menu a:focus {
   color: #404bbf;
@@ -78,6 +78,7 @@ ol {
   letter-spacing: 0.02em;
   color: #fff;
   background-color: #2e2f42;
+  text-align: center;
 }
 
 .hero-button {
@@ -118,6 +119,10 @@ ol {
   background-color: #f4f4fd;
 }
 
+.our-team-list {
+  background-color: #ffffff;
+}
+
 .our-team-title {
   font-weight: 700;
   font-size: 36px;
@@ -125,6 +130,7 @@ ol {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .team-name {
@@ -146,9 +152,11 @@ ol {
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .portfolio-app {
