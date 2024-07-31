@@ -55,6 +55,7 @@ header {
 .navigation {
   display: flex;
   padding: 24px 0;
+  align-items: center;
 }
 
 .logo {
@@ -89,6 +90,7 @@ header {
 
 .menu-link {
   color: #2e2f42;
+  padding: 24px 0;
 }
 
 .menu a:hover,
@@ -167,7 +169,7 @@ header {
 /* Section 2 Feature */
 
 .section-feature {
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 
 .visually-hidden {
@@ -203,6 +205,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .section-feature-text {
@@ -222,7 +225,7 @@ header {
   justify-content: center;
   flex-direction: column;
   gap: 32px;
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 
 .our-team-main-list {
@@ -235,6 +238,11 @@ header {
 .our-team-list {
   background-color: #ffffff;
   max-width: calc((100%-72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-container {
+  padding: 32px 0;
 }
 
 .our-team-title {
@@ -259,7 +267,7 @@ header {
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-align: center;
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .team-position {
@@ -297,9 +305,7 @@ header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-bottom: 8px;
-  padding-left: 16px;
+  margin-bottom: 8px;
 }
 
 .portfolio-list {
@@ -320,14 +326,18 @@ img {
   border-top: 8px;
 }
 
+.portfolio-container {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
+
 .portfolio-app-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  padding-bottom: 32px;
-  padding-left: 16px;
 }
 
 /* End of portfolio section */
@@ -346,7 +356,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
   display: inline-block;
 }
 
