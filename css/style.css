@@ -26,6 +26,10 @@ ol {
   margin: 0 auto;
 }
 
+img {
+  display: block;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
@@ -303,10 +307,6 @@ header {
   gap: 24px;
   flex-wrap: wrap;
   row-gap: 48px;
-}
-
-img {
-  display: block;
 }
 
 .portfolio-list-item {
