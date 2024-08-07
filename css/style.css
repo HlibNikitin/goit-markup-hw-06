@@ -210,6 +210,10 @@ header {
 .section-feature {
   padding: 120px 0;
 }
+.section-feature .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -223,27 +227,25 @@ header {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-.svg-list-features {
+.svg-features {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-}
-
-.svg-item-features {
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  background-color: #f4f4fd;
   width: 264px;
   height: 112px;
-  padding: 24px 100px;
+  border: 1px solid #8e8f99;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 8px;
 }
 
-.section-feature-list {
+.svg-list-features {
   display: flex;
   gap: 24px;
+}
+
+.svg-features-icons {
+  fill: #fff;
 }
 
 .section-feature-list-item {
@@ -278,14 +280,22 @@ header {
 .our-team-main-list {
   display: flex;
   gap: 24px;
-  align-items: center;
-  justify-content: center;
 }
 
 .our-team-list {
   background-color: #ffffff;
   max-width: calc((100% - 72px) / 4);
   border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-photo {
+  max-width: 100%;
+}
+
+.team-container {
+  padding: 32px 0;
 }
 
 .portfolio-text-card {
@@ -295,10 +305,6 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-}
-
-.team-container {
-  padding: 32px 0;
 }
 
 .our-team-title {
@@ -334,30 +340,29 @@ header {
 
 .svg-team-list {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 24px;
 }
 
-.svg-team-item {
+.svg-team-icon {
+  max-width: 232px;
+}
+
+.svg-team-link {
   display: flex;
-  align-items: center;
   justify-content: center;
-  border-radius: 50%;
-  background-color: #4d5ae5;
+  align-items: center;
   width: 40px;
   height: 40px;
-  cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.svg-team-icons {
+  border-radius: 50%;
+  background-color: #4d5ae5;
   fill: #f4f4fd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-team-item:hover,
-.svg-team-item:focus {
+.svg-team-link:hover,
+.svg-team-link:focus {
   background-color: #404bbf;
 }
 
@@ -379,16 +384,6 @@ header {
   text-transform: capitalize;
   margin-bottom: 72px;
 }
-
-.portfolio-app {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  margin-bottom: 8px;
-}
-
 .portfolio-list {
   display: flex;
   gap: 24px;
@@ -398,8 +393,16 @@ header {
 }
 
 .portfolio-list-item {
-  background-color: #fff;
   width: calc((100% - 48px) / 3);
+  box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.portfolio-app {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .box {
@@ -408,25 +411,25 @@ header {
 }
 
 .overlay-portfolio-text {
+  padding: 40px 32px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  padding: 40px 32px 164px;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: transform 250ms ease-in-out;
+  background-color: #4d5ae5;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-item:hover .overlay-portfolio-text {
   transform: translateY(0);
-  background-color: #4d5ae5;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -505,12 +508,12 @@ header {
 
 .svg-footer-list {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   gap: 16px;
 }
 
-.svg-footer-item {
+.svg-footer-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -518,17 +521,12 @@ header {
   background-color: #4d5ae5;
   width: 40px;
   height: 40px;
-  cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.svg-footer-icons {
   fill: #f4f4fd;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.svg-footer-item:hover,
-.svg-footer-item:focus {
+.svg-footer-link:hover,
+.svg-footer-link:focus {
   background-color: #31d0aa;
 }
 
