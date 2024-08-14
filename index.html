@@ -509,7 +509,112 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-footer">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <form class="footer-form">
+            <label class="email-label" for="email">
+              <input
+                class="footer-input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
+              <button class="footer-btn" type="submit">
+                Subscribe
+                <svg class="footer-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
+        </div>
       </div>
     </footer>
+    <!-- Modal overlay start -->
+    <div class="modal-overlay">
+      <div class="modal">
+        <button class="close-btn" type="button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form class="contacts-form-footer">
+          <div class="label-user-container">
+            <label class="user-label" for="user-name">Name</label>
+            <div class="input-container">
+              <input
+                class="user-info"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="footer-contacts-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-man"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="label-user-container">
+            <label class="user-label" for="user-phone">Phone</label>
+            <div class="input-container">
+              <input
+                class="user-info"
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+              />
+              <svg class="footer-contacts-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="label-user-container">
+            <label class="user-label" for="user-email">Email</label>
+            <div class="input-container">
+              <input
+                class="user-info"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
+              <svg class="footer-contacts-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="comment-user-container">
+            <label class="user-label" for="user-comment">Comment</label>
+            <textarea
+              class="footer-textarea"
+              name="user-comment"
+              id="user-comment"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="checkbox">
+            <input
+              class="visually-hidden"
+              name="user-privacy"
+              id="user-privacy"
+              type="checkbox"
+              value="true"
+            />
+            <label class="checkbox-label" for="user-privacy">
+              <span class="checkbox-span">
+                <svg class="checkbox-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-select"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="checkbox-policy">Privacy Policy</a>
+            </label>
+            <button class="modal-checkbox-btn" type="button">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Modal overlay end -->
   </body>
 </html>
