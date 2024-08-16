@@ -758,6 +758,10 @@ header {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.checkbox {
+  margin-bottom: 24px;
+}
+
 .checkbox-label {
   font-size: 12px;
   line-height: 1.17;
@@ -782,7 +786,7 @@ header {
 .checkbox input:checked ~ label span {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 
 .checkbox-icon {
@@ -795,23 +799,21 @@ header {
 }
 
 .modal-checkbox-btn {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
+  display: block;
+  background-color: #4d5ae5;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
-  color: #ffffff;
-  display: block;
-  margin: 0 auto;
-  border: none;
-  border-radius: 4px;
+  color: #fff;
   min-width: 169px;
   height: 56px;
-  background: #4d5ae5;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 16px 32px;
+  border-radius: 4px;
+  border: none;
+  margin: 0 auto;
   cursor: pointer;
-  margin-top: 24px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-checkbox-btn:hover {
