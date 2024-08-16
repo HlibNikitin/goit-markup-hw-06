@@ -552,6 +552,11 @@ header {
   margin-bottom: 16px;
 }
 
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
+
 .email-label {
   display: flex;
   justify-content: space-between;
@@ -656,6 +661,10 @@ header {
 .close-btn:hover {
   background-color: #404bbf;
   border: none;
+}
+
+.close-btn:hover > .close-icon,
+.close-btn:focus > .close-icon {
   fill: #ffffff;
 }
 
@@ -682,7 +691,7 @@ header {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: block;
@@ -706,8 +715,14 @@ header {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.user-info:focus {
+.user-info:focus,
+.user-info:hover {
   border-color: #4d5ae5;
+}
+
+.user-info:focus + .footer-contacts-icon,
+.user-info:hover + .footer-contacts-icon {
+  fill: #4d5ae5;
 }
 
 .footer-textarea:focus {
@@ -767,7 +782,7 @@ header {
 .checkbox input:checked ~ label span {
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
+  fill: #ffffff;
 }
 
 .checkbox-icon {
@@ -786,7 +801,7 @@ header {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
   display: block;
   margin: 0 auto;
   border: none;
