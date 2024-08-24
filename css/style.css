@@ -272,6 +272,7 @@ header {
   width: 320px;
   max-height: 640px;
   padding: 72px 24px 40px 16px;
+  margin: 0;
 }
 
 .mb-menu-close {
@@ -1285,16 +1286,17 @@ header {
   /* end desktop section our portfolio */
   /* desktop footer */
   .footer {
-    padding: 100px 0;
-    padding-left: 156px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 0;
   }
 
   .footer-con.container {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    align-items: baseline;
     flex-wrap: nowrap;
+    column-gap: 0;
     gap: 0;
-    justify-content: flex-start;
   }
 
   .first-footer-container {
